@@ -1,0 +1,31 @@
+.submenu {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 1360px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 41px;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+
+    .submenu__item:first-child &:hover {
+      text-decoration: none;
+    }
+  }
+}

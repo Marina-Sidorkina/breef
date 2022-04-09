@@ -1,0 +1,13 @@
+.logo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 320px;
+  height: 63px;
+  border-right: 1px solid #000000;
+
+  &__link {
+    height: 40px;
+  }
+}

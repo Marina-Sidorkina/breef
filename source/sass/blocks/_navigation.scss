@@ -1,0 +1,35 @@
+.navigation {
+  width: 1040px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    border-right: 1px solid #000000;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 63px;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+
+    .navigation__item:last-child & {
+      color: #9F4A19;
+      background-color: #f1eafb;
+    }
+  }
+}
