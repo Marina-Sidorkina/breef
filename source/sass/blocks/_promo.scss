@@ -5,6 +5,8 @@
 
   &__container {
     box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
     width: 1440px;
     height: 652px;
     padding: 0 35px 0 35px;
@@ -73,5 +75,46 @@
     &:hover {
       color: #000000;
     }
+  }
+
+  &__illustration {
+    position: relative;
+    width: 870px;
+  }
+
+  &__picture:nth-child(1) {
+    position: absolute;
+    right: 134px;
+    bottom: 128px;
+  }
+
+  &__picture:nth-child(2) {
+    position: absolute;
+    right: 323px;
+    bottom: 64px;
+  }
+
+  &__picture:nth-child(3) {
+    position: absolute;
+    right: 426px;
+    bottom: 216px;
+  }
+
+  &__picture:nth-child(4) {
+    position: absolute;
+    right: 384px;
+    bottom: 336px;
+  }
+
+  &__video {
+    box-sizing: border-box;
+    position: absolute;
+    right: 110px;
+    bottom: 340px;
+    background-image: url("../../media/dest/promo/illustration-5.jpg");
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 1.5px solid #f9f7f3;
   }
 }

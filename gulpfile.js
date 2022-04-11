@@ -45,17 +45,17 @@ function styles() {
 // Images
 
 function images() {
-    return src("source/images/src/**/*")
-        .pipe(newer("source/images/dest/"))
+    return src("source/media/src/**/*")
+        .pipe(newer("source/media/dest/"))
         .pipe(imagemin([
             imagemin.mozjpeg({ progressive: true }),
             imagemin.optipng({ optimizationLevel: 3 })
         ]))
-        .pipe(dest("source/images/dest/"))
+        .pipe(dest("source/media/dest/"))
 }
 
 function deleteImages() {
-    return del("source/images/dest/**/*", { force: true })
+    return del("source/media/dest/**/*", { force: true })
 }
 
 // Build
@@ -63,7 +63,7 @@ function deleteImages() {
 function build() {
     return src([
         "source/css/**/*.min.css",
-        "source/images/dest/**/*",
+        "source/media/dest/**/*",
         "source/**/*.html",
     ], { base: "source" })
         .pipe(dest("build"))
@@ -78,7 +78,7 @@ function deleteBuild() {
 function watcher() {
     watch("source/**/sass/**/*", styles);
     watch("source/**/*.html").on("change", browsersync.reload);
-    watch("source/images/src/**/*", images);
+    watch("source/media/src/**/*", images);
 }
 
 // Tasks
