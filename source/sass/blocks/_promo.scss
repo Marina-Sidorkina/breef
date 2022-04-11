@@ -82,28 +82,30 @@
     width: 870px;
   }
 
-  &__picture:nth-child(1) {
-    position: absolute;
-    right: 134px;
-    bottom: 128px;
-  }
+  &__picture {
+    &:nth-child(1) {
+      position: absolute;
+      right: 134px;
+      bottom: 128px;
+    }
 
-  &__picture:nth-child(2) {
-    position: absolute;
-    right: 323px;
-    bottom: 64px;
-  }
+    &:nth-child(2) {
+      position: absolute;
+      right: 323px;
+      bottom: 64px;
+    }
 
-  &__picture:nth-child(3) {
-    position: absolute;
-    right: 426px;
-    bottom: 216px;
-  }
+    &:nth-child(3) {
+      position: absolute;
+      right: 426px;
+      bottom: 216px;
+    }
 
-  &__picture:nth-child(4) {
-    position: absolute;
-    right: 384px;
-    bottom: 336px;
+    &:nth-child(4) {
+      position: absolute;
+      right: 384px;
+      bottom: 336px;
+    }
   }
 
   &__video {
@@ -116,5 +118,94 @@
     background-repeat: no-repeat;
     background-position: center;
     border-right: 1.5px solid #f9f7f3;
+  }
+
+  &__description {
+    position: absolute;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:nth-of-type(1) {
+      width: 81px;
+      right: 110px;
+      bottom: 64px;
+      text-align: center;
+
+      &::before {
+        content: url("../../media/dest/promo/arrow-1.png");
+        position: absolute;
+        top: -35px;
+        left: -95px;
+        width: 84px;
+        height: 98px;
+        z-index: -1;
+      }
+    }
+
+    &:nth-of-type(2) {
+      width: 63px;
+      right: 551px;
+      bottom: 96px;
+      text-align: right;
+
+      &::before {
+        content: url("../../media/dest/promo/arrow-2.png");
+        position: absolute;
+        top: -90px;
+        left: 15px;
+        width: 84px;
+        height: 98px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      width: 90px;
+      right: 592px;
+      bottom: 420px;
+      text-align: center;
+
+      &::before {
+        content: url("../../media/dest/promo/arrow-3.png");
+        position: absolute;
+        top: 60px;
+        left: -5px;
+        width: 84px;
+        height: 98px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      width: 90px;
+      right: 274px;
+      bottom: 415px;
+      text-align: center;
+
+      &::before {
+        content: url("../../media/dest/promo/arrow-4.png");
+        position: absolute;
+        top: -110px;
+        left: 0;
+        width: 84px;
+        height: 98px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      width: 108px;
+      right: 90px;
+      bottom: 586px;
+      text-align: center;
+
+      &::before {
+        content: url("../../media/dest/promo/arrow-5.png");
+        position: absolute;
+        top: 55px;
+        left: -40px;
+        width: 84px;
+        height: 98px;
+      }
+    }
   }
 }
