@@ -54,4 +54,24 @@
       color: #ffffff;
     }
   }
+
+  &__agencies {
+    width: 262px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    color: #808080;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__agencies-link {
+    color: #808080;
+    cursor: pointer;
+
+    &:hover {
+      color: #000000;
+    }
+  }
 }
