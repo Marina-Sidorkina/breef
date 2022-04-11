@@ -1,0 +1,17 @@
+@mixin button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 262px;
+  height: 42px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  color: #9f4a19;
+  text-decoration: none;
+  text-transform: capitalize;
+}
