@@ -47,6 +47,11 @@
       background-color: #9f4a19;
       color: #ffffff;
     }
+
+    &:active {
+      background-color: #f1eafb;
+      color: #9f4a19;
+    }
   }
 
   &__link-demo {
@@ -57,6 +62,11 @@
     &:hover {
       background-color: #9f4a19;
       color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: #9f4a19;
     }
   }
 
