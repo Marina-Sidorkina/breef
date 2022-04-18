@@ -1,0 +1,135 @@
+.why {
+  width: 100%;
+  min-width: 1440px;
+
+  &__header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 113px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    width: 100%;
+    height: 44px;
+    margin: 0 auto 6px auto;
+    text-align: center;
+  }
+
+  &__description {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 407px;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1440px;
+    height: 407px;
+    min-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 78px;
+    list-style: none;
+  }
+
+  &__list-item {
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 251px;
+    padding-top: 95px;
+
+    &:nth-child(1) {
+      width: 310px;
+      margin-right: 115px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        background-image: url("../../media/dest/why/loupe.png");
+      }
+    }
+
+    &:nth-child(2) {
+      width: 390px;
+      margin-right: 130px;
+
+      .why__list-text {
+        width: 310px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        background-image: url("../../media/dest/why/screen.png");
+      }
+    }
+
+    &:nth-child(3) {
+      width: 320px;
+      margin-right: 130px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        background-image: url("../../media/dest/why/circle.png");
+      }
+    }
+  }
+
+  &__list-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  &__list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+  }
+}
