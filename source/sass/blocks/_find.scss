@@ -1,0 +1,91 @@
+.find {
+  width: 100%;
+  min-width: 1440px;
+
+  &__header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 113px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    width: 100%;
+    height: 44px;
+    margin: 0 auto 6px auto;
+    text-align: center;
+  }
+
+  &__description {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 0 72px;
+  }
+
+  &__img {
+    display: block;
+    width: 432px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 0 108px;
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+    margin: 0 0 46px 0;
+    padding-left: 55px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 32px;
+      height: 32px;
+      background-image: url("../../media/dest/find/icon.png");
+    }
+  }
+}
