@@ -1,0 +1,147 @@
+.guide-form {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 253px;
+  min-width: 1440px;
+  padding-left: 72px;
+  background-color: #f1eafb;
+  border-bottom: 1px solid #000000;
+
+  &__title {
+    box-sizing: border-box;
+    width: 335px;
+    margin: 0  89px 0 0;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 35px;
+    color: #9F4A19;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    width: 1440px;
+    min-width: 1440px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 898px;
+    height: 107px;
+  }
+
+  &__name,
+  &__email {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 439px;
+    height: 42px;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid #000000;
+    padding-left: 27px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #808080;
+    }
+  }
+
+  &__fieldset {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 439px;
+    height: 42px;
+    padding: 0 0 0 113px;
+    margin: 0;
+    border: none;
+  }
+
+  &__legend {
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__brand-radio,
+  &__agency-radio {
+    display: none;
+  }
+
+  &__brand-label,
+  &__agency-label {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 112px;
+    height: 33px;
+    padding-left: 47px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+
+    &:before {
+      box-sizing: border-box;
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 33px;
+      height: 33px;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+    }
+
+    &:hover {
+      color: #808080;
+
+      &:before {
+        border: 1px solid #808080;
+      }
+    }
+  }
+
+  &__brand-radio:checked ~ &__brand-label:after,
+  &__agency-radio:checked ~ &__agency-label:after{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 28px;
+    left: 4px;
+    top: -2px;
+    z-index: 2;
+    background-image: url("../../media/dest/guide-form/check.svg");
+  }
+
+  &__submit {
+    @include button;
+    width: 439px;
+    background-color: #9f4a19;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #f1eafb;
+      color: #9f4a19;
+    }
+
+    &:active {
+      background-color: #9f4a19;
+      color: #ffffff;
+    }
+  }
+}
