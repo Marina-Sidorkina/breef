@@ -38,6 +38,11 @@
     animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    .marquee:hover & {
+      animation-play-state: paused;
+    }
   }
 
   &__line:nth-child(2) {
@@ -47,6 +52,11 @@
     animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    .marquee:hover & {
+      animation-play-state: paused;
+    }
   }
 
   &__shadow {
