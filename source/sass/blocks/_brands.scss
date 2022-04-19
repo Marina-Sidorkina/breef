@@ -1,0 +1,104 @@
+.brands {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 1440px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000000;
+
+  &__title {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1440px;
+    height: 85px;
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #000000;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 43px;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    min-width: 1440px;
+    height: 392px;
+    margin: 0 auto;
+    padding: 0 72px;
+    border: 1px solid gold;
+  }
+
+  &__animation {
+    box-sizing: border-box;
+    position: absolute;
+    top: -57.5px;
+    right: 40px;
+    width: 115px;
+    height: 115px;
+    margin: 0;
+    animation-name: moveCircle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__promo {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 324px;
+    height: 252px;
+    margin: 0;
+    padding: 0 214px 5px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 60px;
+      left: 175px;
+      width: 77px;
+      height: 84px;
+      background-image: url("../../media/dest/brands/arrow.png");
+    }
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 972px;
+    height: 252px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes moveCircle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
