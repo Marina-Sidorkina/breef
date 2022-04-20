@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "editorconfig-checker",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp build && firebase deploy"
   },
   "author": "Marina Sidorkina",
   "license": "ISC",
