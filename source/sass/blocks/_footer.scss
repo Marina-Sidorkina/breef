@@ -24,9 +24,11 @@
     &_top {
       box-sizing: border-box;
       display: grid;
-      grid-template-columns: 360px 360px 720px;
-      grid-template-rows: 66px;
+      grid-template-columns: 360px 360px 715px;
+      grid-template-rows: 65px;
       margin: 0;
+      padding-left: 5px;
+      padding-top: 1px;
     }
 
     &_bottom {
@@ -35,6 +37,7 @@
       grid-template-columns: 360px 360px 180px 540px;
       grid-template-rows: 230px;
       margin: 0;
+      padding-left: 5px;
     }
   }
 
@@ -60,7 +63,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 23px 0 0 34px;
+    padding: 22px 0 0 34px;
 
     border-right: 1px solid #000000;
 
@@ -74,9 +77,11 @@
     }
 
     &:last-of-type {
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-right: 33px;
     }
   }
 
@@ -85,14 +90,17 @@
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.48px;
-    margin: 0 0 21px 0;
+    margin: 0 0 21px -15px;
   }
 
   &__button {
+    box-sizing: border-box;
     @include button;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
     background-color: #f1eafb;
     width: 240px;
+    padding-bottom: 3px;
+    padding-right: 2px;
 
     &:hover {
       background-color: #9f4a19;
@@ -109,8 +117,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 243px;
     height: 24px;
+    margin: 0 auto;
   }
 
   &__social-link {
