@@ -16,16 +16,17 @@
     width: 1440px;
     height: 42px;
     margin: 0;
-    padding: 0 34px;
+    padding: 0 34px 0 39px;
     list-style: none;
   }
 
   &__item {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     height: 42px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 5px 0;
     cursor: pointer;
 
     &:hover .submenu-row__link {
@@ -37,7 +38,7 @@
     }
 
     &:nth-child(2) {
-      width: 135px;
+      width: 137px;
     }
 
     &:nth-child(3) {
@@ -45,15 +46,17 @@
     }
 
     &:nth-child(4) {
-      width: 171px;
+      width: 170px;
     }
 
     &:nth-child(5) {
       width: 126px;
+      padding-left: 3px;
     }
 
     &:nth-child(6) {
       width: 189px;
+      padding-left: 4px;
     }
   }
 
