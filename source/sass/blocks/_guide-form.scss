@@ -12,27 +12,36 @@
 
   &__title {
     box-sizing: border-box;
-    width: 335px;
-    margin: 0  89px 0 0;
+    width: 380px;
+    height: 253px;
+    margin: 0 0 0 0;
+    padding: 50px 32px 0 5px;
     font-weight: 400;
     font-size: 29px;
     line-height: 35px;
     color: #9F4A19;
   }
 
+  &__font {
+    font-size: 28px;
+  }
+
   &__container {
     box-sizing: border-box;
     display: flex;
+    align-items: center;
     width: 1440px;
   }
 
   &__form {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-sizing: border-box;
     width: 898px;
-    height: 107px;
+    height: 150px;
+    margin: 25px 0 0 36px;
+    padding-top: 20px;
   }
 
   &__name,
@@ -56,6 +65,10 @@
     }
   }
 
+  &__email {
+    padding-left: 33px;
+  }
+
   &__fieldset {
     position: relative;
     box-sizing: border-box;
@@ -70,7 +83,8 @@
 
   &__legend {
     position: absolute;
-    left: 0;
+    left: -2px;
+    top: 13px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -99,7 +113,8 @@
       box-sizing: border-box;
       position: absolute;
       content: "";
-      left: 0;
+      left: 1px;
+      top: 1px;
       width: 33px;
       height: 33px;
       background-color: #ffffff;
@@ -128,10 +143,12 @@
   }
 
   &__submit {
+    box-sizing: border-box;
     @include button;
     width: 439px;
     background-color: #9f4a19;
     color: #ffffff;
+    padding: 0 9px 3px 0;
 
     &:hover {
       background-color: #f1eafb;
