@@ -5,20 +5,56 @@
   &__list {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    width: 1360px;
+    width: 1440px;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
+  &__item {
+    box-sizing: border-box;
+
+    &:nth-of-type(1) {
+      width: 209px;
+      padding-left: 43px;
+    }
+
+    &:nth-of-type(2) {
+      width: 203px;
+      letter-spacing: 0;
+    }
+
+    &:nth-of-type(3) {
+      width: 216px;
+      letter-spacing: 0;
+    }
+
+    &:nth-of-type(4) {
+      width: 200px;
+      letter-spacing: 0;
+    }
+
+    &:nth-of-type(5) {
+      width: 224px;
+      letter-spacing: 0;
+    }
+
+    &:nth-of-type(6) {
+      width: 205px;
+      letter-spacing: 0;
+    }
+  }
+
   &__link {
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 41px;
+    height: 38px;
     color: #000000;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
 
     &:hover {
       text-decoration: line-through;
