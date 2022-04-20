@@ -13,7 +13,7 @@
     width: 100%;
     min-width: 1440px;
     height: 85px;
-    margin: 0 0 0 0;
+    margin: 0 0 0 6px;
     border-bottom: 1px solid #000000;
     background-color: #ffffff;
     font-weight: 400;
@@ -28,7 +28,7 @@
     align-items: center;
     width: 1440px;
     min-width: 1440px;
-    height: 392px;
+    height: 390px;
     margin: 0 auto;
     padding: 0 72px;
   }
@@ -36,8 +36,8 @@
   &__animation {
     box-sizing: border-box;
     position: absolute;
-    top: -57.5px;
-    right: 40px;
+    top: -59.5px;
+    right: 35px;
     width: 115px;
     height: 115px;
     margin: 0;
@@ -55,7 +55,7 @@
     width: 324px;
     height: 252px;
     margin: 0;
-    padding: 0 214px 5px 0;
+    padding: 0 220px 10px 5px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -63,8 +63,8 @@
     &:after {
       position: absolute;
       content: "";
-      bottom: 60px;
-      left: 175px;
+      bottom: 64px;
+      left: 185px;
       width: 77px;
       height: 84px;
       background-image: url("../../media/dest/brands/arrow.png");
@@ -74,6 +74,7 @@
   &__list {
     box-sizing: border-box;
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
     width: 972px;
     height: 252px;
@@ -83,13 +84,28 @@
   }
 
   &__item {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
     height: 25%;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7),
+    &:nth-of-type(8) {
+      margin-bottom: 32px;
+    }
   }
 
   @keyframes moveCircle {
